@@ -1,12 +1,11 @@
 using System;
 
 namespace sugeno {
-    class mother{
-        public static void Main(String[] args){
-var tuple= Tuple.Create<float,float,float>(0.1,0.5,0.7);
+    class mother {
+        public static void Main(string[] args) {
+            var tuple = (0.1f, 0.5f, 0.7f);
             Rule_base rb = new Rule_base();
-            rb.compute(tuple,tuple);
-
+            rb.Compute(tuple, tuple);
         }
     }
 }

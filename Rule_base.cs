@@ -1,15 +1,18 @@
-using System; 
-
+using System;
 
 namespace sugeno {
 
     public class Rule_base {
-        private float[] alpha; 
- private float[] z;
         
-        public void compute(Tuple<float,float,float> strength , Tuple<float,float,float> money){
-            Console.WriteLine(strength);
-            Console.WriteLine(money);
+        public void Compute((float, float, float) strength, (float, float, float) money) {
+            // Process strength and money tuples efficiently
+            var (s1, s2, s3) = strength;
+            var (m1, m2, m3) = money;
+            
+            // Example computation - customize based on your needs
+            float result = (s1 + s2 + s3 + m1 + m2 + m3) / 6f;
+            
+            return;
         }
     }
 }
